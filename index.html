@@ -8,16 +8,16 @@
   /* ===== CSS 变量：定义全局颜色主题 ===== */
   :root {
     --focus: #e74c3c;              /* 专注模式的主色（番茄红） */
-    --focus-glow: rgba(231, 76, 60, 0.4);
+    --focus-glow: rgba(231, 76, 60, 0.25);
     --break: #27ae60;              /* 短休息主色（绿色） */
-    --break-glow: rgba(39, 174, 96, 0.4);
+    --break-glow: rgba(39, 174, 96, 0.25);
     --long-break: #3498db;         /* 长休息主色（蓝色） */
-    --long-break-glow: rgba(52, 152, 219, 0.4);
-    --bg: #0f0f14;                 /* 深色背景 */
-    --card: #1a1a24;               /* 卡片/控件背景 */
-    --card-border: #2a2a3a;        /* 边框色 */
-    --text: #e8e8f0;               /* 主文字色 */
-    --text-dim: #8888a0;           /* 辅助文字色 */
+    --long-break-glow: rgba(52, 152, 219, 0.25);
+    --bg: #f5f5f7;                 /* 浅色背景 */
+    --card: #ffffff;               /* 卡片/控件背景 */
+    --card-border: #e3e3ed;        /* 边框色 */
+    --text: #1a1a2e;               /* 主文字色 */
+    --text-dim: #9999b0;           /* 辅助文字色 */
     --radius: 20px;                /* 通用圆角 */
   }
 
@@ -42,7 +42,7 @@
     width: 600px; height: 600px;
     border-radius: 50%;
     filter: blur(120px);           /* 120px 高斯模糊产生光晕 */
-    opacity: 0.12;
+    opacity: 0.18;
     transition: all 0.6s ease;     /* 切换模式时颜色渐变 */
     pointer-events: none;          /* 不阻挡鼠标操作 */
   }
@@ -219,7 +219,7 @@
     align-items: center;
     gap: 6px;
   }
-  .settings-btn:hover { background: var(--card); color: var(--text); }
+  .settings-btn:hover { background: #e0e0ea; color: var(--text); }
 
   /* ===== 设置面板（默认隐藏，点击后显示）===== */
   .settings-panel {
